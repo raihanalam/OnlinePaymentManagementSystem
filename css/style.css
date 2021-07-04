@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Consolas;
+}
+h1{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+button{
+    height: 30px;
+    width: 80px;
+    color: white;
+    background-color: #0095ff;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #ff4800;
+    border: 1px solid lightskyblue;
+}
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+.header .row{
+    display: flex;
+    background-color:  #481948;
+    height: 55px;
+    width: 100%;
+}
+.header>.row>a>h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.header .row ol{
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 0;
+} 
+.header .row ol i{
+    margin-left: 10px;
+    height: 80px;
+    width: 60px;
+}
+.header .row ol i:hover{
+    border-bottom: 4px solid #0095ff;
+
+}
+.header .row ol i a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: normal;
+}
+.header .row ol i a:active{
+    color: #ff4800;
+}
+.header .row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+.header .row ul button{
+    margin-right: 10px;
+}
+.footer{
+    height: 30px;
+    background-color: #481948;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    font-family: Consolas;
+    font-size: 10px;
+    padding-top: 8px;
+}
+.theme-sec{
+    background-image: url('climbing-3.jpg');
+    height: 580px;
+    background-size: contain;
+    opacity: 100%;
+    width: 100% auto;
+    background-repeat: no-repeat;
+    background-size: 1280px 680px;
+    background-attachment: fixed;
+}
+.theme-sec>.row{
+    display: flex;
+}
+.theme-sec>.row>.left-sec{
+    width: 50%;
+}
+.theme-sec>.row>.left-sec>.card{
+    height: 350px;
+    width: 50%;
+    background-color: rgb(195, 138, 248);
+    padding: 25px;
+    position: relative;
+    top: 130px;
+    left: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+.theme-sec>.row>.left-sec>.card> .fa-thumbtack{
+    font-size: 20px;
+    color: #481948;
+}
+.theme-sec>.row>.left-sec>.card>h2{
+    font-weight: bold;
+    color: white;
+}
+.theme-sec>.row>.left-sec>.card>p{
+    color: black;
+}
+.theme-sec>.row>.left-sec>.card>button{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+.theme-sec>.row>.right-sec{
+    height: 400px;
+    width: 50%;
+    position: relative;
+    top:280px;
+}
+.theme-sec>.row>.right-sec>h2{
+    color: white;
+    font-size: 25px;
+}
+.theme-sec>.row>.right-sec>button{
+    margin-left: 160px;
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+}
+.mid-sec>.row{
+    height: 260px;
+    width: 100% auto;
+    background-color: #6e226e;
+}
+.mid-sec>.row>h2{
+    text-align: center;
+    color: White;
+    font-family: Consolas;
+    padding-top: 60px;
+    font-size: 25px;
+    width: 100% auto;
+}
+.service-sec{
+    height: 520px;
+    margin-top: 40px;
+}
+.service-sec>.row{
+    display: flex;
+    justify-content: center;
+}
+.service-sec>.row>.card{
+    height: 400px;
+    width: 300px;
+    /*border: 1px solid greenyellow;*/
+    background-color: rgb(243, 237, 237);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-sec>.row>.card:hover{
+    border-bottom: 5px solid #ff4800;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-sec>h2{
+    color: black;
+    text-align: center;
+}
+.service-sec>.row>.card>h3{
+    font-size: 22px;
+}
+.service-sec>.row>.card>ul{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.service-sec>.row>.card>img{
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+}
+.service-sec>.row>.card>ul>li>.fa-credit-card,.fa-cart-plus, .fa-bullhorn{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: rgb(95, 92, 92);
+}
+.service-sec>.row>.card>ul>li>.fa-credit-card:hover,.fa-cart-plus:hover, .fa-bullhorn:hover{
+    font-size: 25px;
+    color: #ff4800;
+}
+.info-sec{
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+.info-sec h2{
+    text-align: center;
+}
+.info-sec>.smart-line , .service-sec>.smart-line{
+    height: 4px;
+    width: 400px;
+    background: linear-gradient(to right, #e6b2e6,#6e226e,#e6b2e6);
+    position: relative;
+    left: 430px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.info-sec .row{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80% auto;
+}
+.info-sec .row img{
+    height: 300px;
+    width: 300px;
+}
+.info-sec .row .text-box{
+    background-color: rgb(246, 250, 246);
+    height: 350px;
+    width: 800px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info-sec .row .text-box p{
+    height: 200px;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: justify;
+}
+.info-sec .row .text-box h4{
+    height: 50px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: justify;
+
+}
+
+.app-sec{
+    background-image: url('app-download.jpg');
+    height: 500px;
+    opacity: 100%;
+    margin-top: 40px;
+    width: 100% auto;
+    background-repeat: no-repeat;
+    background-size: 1280px 780px;
+    background-attachment:scroll;
+    opacity: 100%;
+    background-color: rgb(29, 24, 34);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-sec .left-sec , .right-sec{
+    width: 40%;
+}
+.app-sec .left-sec img{
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+}
+.app-sec .right-sec h4{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.app-sec .right-sec input{
+    height: 25px;
+    width: 410px;
+}
+.end-sec{
+    height: 300px;
+    background-color: #6e226e;
+    background-attachment: fixed;
+    width: 100% auto;
+}
+.end-sec .row{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.end-sec .row .col{
+    margin-top: 50px;
+    margin-right: 70px;
+    font-size: 20px;
+}
+.end-sec .row .col ul{
+    list-style: none;
+    color: rgb(243, 200, 200);
+    margin-top: 20px;
+}
+.end-sec .row .col ul li{
+    margin-top: 10px;
+}
+
+/*.app-sec:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 40%;
+    background-blend-mode: overlay;
+}*/
